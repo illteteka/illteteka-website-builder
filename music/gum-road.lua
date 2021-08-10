@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_MUSIC, "Gum Road", "gum-road")
 local page = pages.content[index]
-page.desc = "Gum Road is a short ambient album about the winter. Some songs needed to be combined for streaming services as there’s a limit to how short songs can be on those platforms.RP_BRTracklist:RP_BR1. Tunnel Extractor (0:34)RP_BR2. Sweetened Juice Tutorial (0:36) ^RP_BR3. Pump Downloader (0:40)RP_BR4. Isotope Regression (0:36) ^RP_BR5. Absolute Malt (0:34)RP_BR6. Honey Stealer’s Anthem (0:34) ^RP_BR7. A Reminder for the Soft Toes (0:36)RP_BR8. Leaf Sniffer (0:35) ^RP_BR9. Proteus Promise (0:33) ^RP_BR10. Exit Ticket (0:53)RP_BR^ denotes the track was combined with the above track(s) for streaming services"
+page.desc = "Gum Road is a short ambient album about the winter.RP_BRTracklist:RP_BR1. Tunnel Extractor (1:11)RP_BR2. Pump Downloader (1:16)RP_BR3. Absolute Malt (1:08)RP_BR4. Leaf Sniffer (1:46)RP_BR5. Exit Ticket (0:53)"
 page.month = 3
 page.day = 3
 page.year = 2021

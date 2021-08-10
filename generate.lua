@@ -186,13 +186,13 @@ function generate.makeGrids()
 			this_content = this_content .. extra_tabs .. '\t<div id="item-space"></div>\n'
 		else
 			-- Finish and write the page
-			local write_loc = "export\\index.html"
+			local write_loc = "export" .. _SLASH .. "index.html"
 			if write_to ~= "index" then
-				os.execute("mkdir export\\" .. write_to)
-				write_loc = "export\\" .. write_to .. "\\index.html"
+				os.execute("mkdir export" .. _SLASH .. write_to)
+				write_loc = "export" .. _SLASH .. write_to .. _SLASH .. "index.html"
 			else
 				write_to = "games"
-				os.execute("mkdir export\\games")
+				os.execute("mkdir export" .. _SLASH .. "games")
 			end
 			
 			write_to = generate.cap(write_to)
@@ -285,13 +285,13 @@ function generate.makeEntries(page)
 	this_entry = this_entry .. '\t</div>\n'
 	this_entry = this_entry .. '</div>\n'
 	
-	local write_loc2 = "export\\games\\" .. page.url .. ".html"
+	local write_loc2 = "export" .. _SLASH .. "games" .. _SLASH .. page.url .. ".html"
 	local write_to2 = page.src
 	if write_to2 ~= "index" then
-		write_loc2 = "export\\" .. write_to2 .. "\\" .. page.url .. ".html"
-		os.execute("mkdir export\\" .. write_to2)
+		write_loc2 = "export" .. _SLASH .. write_to2 .. _SLASH .. page.url .. ".html"
+		os.execute("mkdir export" .. _SLASH .. write_to2)
 	else
-		os.execute("mkdir export\\games")
+		os.execute("mkdir export" .. _SLASH .. "games")
 	end
 	
 	local file = io.open(write_loc2, "w")

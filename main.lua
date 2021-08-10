@@ -3,8 +3,13 @@ generate = require "generate"
 
 _URL = "https://illteteka.com/"
 
-function init()
+_SLASH = package.config:sub(1,1)
+_OS = "win"
+if _SLASH == "/" then
+	_OS = "mac"
+end
 
+function init()
 	-- Create navbar
 	pages.addNavBar("Games", "index", false)
 	pages.addNavBar("Music", "music", false)
@@ -38,9 +43,14 @@ function init()
 	generate.makeNavbar()
 	generate.makeTemplate()
 	generate.makeGrids()
-	os.execute("copy /B export\\index.html export\\404.html")
-	os.execute("copy /B export\\index.html export\\403.html")
-	
+	if _OS == "win" then
+		os.execute("copy /B export" .. _SLASH .. "index.html export" .. _SLASH .. "404.html")
+		os.execute("copy /B export" .. _SLASH .. "index.html export" .. _SLASH .. "403.html")
+	else
+		os.execute("cp -R export" .. _SLASH .. "index.html export" .. _SLASH .. "404.html")
+		os.execute("cp -R export" .. _SLASH .. "index.html export" .. _SLASH .. "403.html")
+	end
+
 end
 
 --[[
