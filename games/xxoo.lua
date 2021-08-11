@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_GAMES, "xxoo [balloon fight official sequel]", "xxoo")
 local page = pages.content[index]
-page.desc = "A short <a href='https://www.flickgame.org/'>flickgame</a>"
+page.desc = "A short <a class='sp' href='https://www.flickgame.org/'>flickgame</a>"
 page.month = 6
 page.day = 21
 page.year = 2017

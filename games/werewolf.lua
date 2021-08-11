@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_GAMES, "Werewolf: The Achocolypse", "werewolf")
 local page = pages.content[index]
-page.desc = "Werewolf: The Achocolypse was made for the <a href='https://itch.io/jam/love2d-jam-2021'>LÖVE Jam 2021</a>. I made this game with NotQuiteApex and Percy_Creates. This game scored 12th overall for the game jam and 2nd in audio!"
+page.desc = "Werewolf: The Achocolypse was made for the <a class='sp' href='https://itch.io/jam/love2d-jam-2021'>LÖVE Jam 2021</a>. I made this game with NotQuiteApex and Percy_Creates. This game scored 12th overall for the game jam and 2nd in audio!"
 page.month = 2
 page.day = 22
 page.year = 2021

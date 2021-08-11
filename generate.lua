@@ -200,6 +200,7 @@ function generate.makeGrids()
 			local file = io.open(write_loc, "w")
 			local this_temp2 = string.gsub(generate.template, "RP_CONTENT", this_content)
 			this_temp2 = string.gsub(this_temp2, "RP_TITLE", write_to)
+			this_temp2 = string.gsub(this_temp2, "RP_DATE", _DATE)
 			file:write(this_temp2)
 			file:close(file)
 			this_content = ""
@@ -297,6 +298,7 @@ function generate.makeEntries(page)
 	local file = io.open(write_loc2, "w")
 	local this_temp3 = string.gsub(generate.template, "RP_CONTENT", this_entry)
 	this_temp3 = string.gsub(this_temp3, "RP_TITLE", page.title)
+	this_temp3 = string.gsub(this_temp3, "RP_DATE", _DATE)
 	file:write(this_temp3)
 	file:close(file)
 
@@ -304,7 +306,7 @@ end
 
 function generate.makeLinks(page)
 	local str = ""
-	local pre_link = '\t\t\t<a id="link" href="'
+	local pre_link = '\t\t\t<a class="sp2" id="link" href="'
 	local mid_link = '">&gt;&nbsp;'
 	local end_link = '&nbsp;&lt;</a>\n'
 	

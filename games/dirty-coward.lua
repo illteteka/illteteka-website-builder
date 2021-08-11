@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_GAMES, "YOU ARE A DIRTY COWARD", "dirty-coward")
 local page = pages.content[index]
-page.desc = "I made this game with my friend Mike (MUCC) in about 6 hours. YOU ARE A DIRTY COWARD runs on Windows, Mac, Linux, and a 3DS that can run homebrew. The 3DS version was made with <a href='https://github.com/TurtleP/LovePotion'>LÖVE Potion</a>"
+page.desc = "I made this game with my friend Mike (MUCC) in about 6 hours. YOU ARE A DIRTY COWARD runs on Windows, Mac, Linux, and a 3DS that can run homebrew. The 3DS version was made with <a class='sp' href='https://github.com/TurtleP/LovePotion'>LÖVE Potion</a>"
 page.month = 2
 page.day = 12
 page.year = 2021

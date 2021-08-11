@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_SECRETS, "Memestone", "memestone")
 local page = pages.content[index]
-page.desc = "Memestone was made for my Communications Independent Study at UMass Amherst. The project was overseen by <a href='https://curiositybits.cc/'>Prof. Weiai Xu</a>. Memestone is an educational game for analyzing the content of Reddit memes. The game downloads memes from Reddit and converts them into trading cards. The trading cards are scored based on the sentiment associated with the text data for the meme (Reddit comments, image OCR) using sentiment analysis algorithms by TextBlob and NLTK."
+page.desc = "Memestone was made for my Communications Independent Study at UMass Amherst. The project was overseen by <a class='sp' href='https://curiositybits.cc/'>Prof. Weiai Xu</a>. Memestone is an educational game for analyzing the content of Reddit memes. The game downloads memes from Reddit and converts them into trading cards. The trading cards are scored based on the sentiment associated with the text data for the meme (Reddit comments, image OCR) using sentiment analysis algorithms by TextBlob and NLTK."
 page.month = 10
 page.day = 1
 page.year = 2020

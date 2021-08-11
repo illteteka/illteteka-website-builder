@@ -8,6 +8,11 @@ _OS = "win"
 if _SLASH == "/" then
 	_OS = "mac"
 end
+_YEAR = os.date("%Y")
+_DATE = " - " .. _YEAR
+if _YEAR == "2021" then
+	_DATE = ""
+end
 
 function init()
 	-- Create navbar
@@ -52,19 +57,6 @@ function init()
 	end
 
 end
-
---[[
-	Mobile site......
-	Do JS hack that makes it so 'force desktop' works
-
-	Fix weird bugs with rendering
-	
-	add screenshots
-	
-	check user agent for mobile
-	load mobile css
-	
-]]
 
 function generateDate(page)
 	local score = (page.year * 100000) + (page.month * 1000) + (page.day * 100)

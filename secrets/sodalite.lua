@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_SECRETS, "Sodalite", "sodalite")
 local page = pages.content[index]
-page.desc = "Sodalite is a 2D vector editor for Windows, Mac, and Linux. Sodalite pioneers vertex sculpting as an alternative to making low poly vector artwork. It features new smart triangulation and advanced vertex manipulation algorithms allowing for pixel-perfect precision when making artwork. Sodalite also has unlimited undo! Sodalite was made with <a href='https://love2d.org/'>LÖVE</a>RP_BRIf you would like to receive an in-development build of Sodalite, please reach out to me at my email:RP_BRnick@illteteka.com"
+page.desc = "Sodalite is a 2D vector editor for Windows, Mac, and Linux. Sodalite pioneers vertex sculpting as an alternative to making low poly vector artwork. It features new smart triangulation and advanced vertex manipulation algorithms allowing for pixel-perfect precision when making artwork. Sodalite also has unlimited undo! Sodalite was made with <a class='sp' href='https://love2d.org/'>LÖVE</a>RP_BRIf you would like to receive an in-development build of Sodalite, please reach out to me at my email:RP_BRnick@illteteka.com"
 page.month = 6
 page.day = 7
 page.year = 2020

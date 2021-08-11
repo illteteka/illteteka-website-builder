@@ -1,6 +1,6 @@
 local index = pages.addContent(PAGE_GAMES, "hot pocolate", "hot-pocolate")
 local page = pages.content[index]
-page.desc = "hot pocolate is a music visualizer for Windows, Mac, Linux, and a Nintendo Switch that can run homebrew. Tap along to the beat of your favorite song while hot pocolate entrances you. Made with <a href='https://love2d.org/'>LÖVE</a> and <a href='https://github.com/TurtleP/LovePotion'>LÖVE Potion</a>"
+page.desc = "hot pocolate is a music visualizer for Windows, Mac, Linux, and a Nintendo Switch that can run homebrew. Tap along to the beat of your favorite song while hot pocolate entrances you. Made with <a class='sp' href='https://love2d.org/'>LÖVE</a> and <a class='sp' href='https://github.com/TurtleP/LovePotion'>LÖVE Potion</a>"
 page.month = 8
 page.day = 15
 page.year = 2018
