@@ -222,6 +222,7 @@ function generate.makeEntries(page)
 
 	local this_entry = ""
 	local has_screenshots = page.screenshots ~= nil
+	local has_screenshot_links = (page.screenshot_links ~= nil) and (#page.screenshot_links == #page.screenshots)
 	local has_links = page.links ~= nil
 	this_entry = this_entry .. '<div id="items">\n'
 	this_entry = this_entry .. '\t<div id="body">\n'
@@ -258,7 +259,13 @@ function generate.makeEntries(page)
 			local this_screen = page.screenshots[screen]
 			local dir_link = _URL .. 'images/' .. this_screen
 			this_entry = this_entry .. srn_start
-			this_entry = this_entry .. dir_link
+
+			if has_screenshot_links then
+				this_entry = this_entry .. page.screenshot_links[screen]
+			else
+				this_entry = this_entry .. dir_link
+			end
+
 			this_entry = this_entry .. srn_mid
 			this_entry = this_entry .. dir_link
 			this_entry = this_entry .. srn_end
@@ -373,6 +380,15 @@ function generate.makeLinks(page)
 		str = str .. end_link
 	end
 	
+	-- Stream X on Newgrounds
+	if page.links.ng ~= nil then
+		str = str .. pre_link
+		str = str .. page.links.ng
+		str = str .. mid_link
+		str = str .. "Stream " .. page.title .. " on Newgrounds"
+		str = str .. end_link
+	end
+
 	-- Stream X on SoundCloud
 	if page.links.sc ~= nil then
 		str = str .. pre_link

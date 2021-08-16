@@ -40,6 +40,7 @@ function init()
 	require "music.little-gremlin"
 	require "music.gum-road"
 	require "music.some-dnue"
+	require "music.polite-buster"
 	-- Secrets
 	require "secrets.sodalite"
 	require "secrets.memestone"
